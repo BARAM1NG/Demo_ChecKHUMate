@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Check your Roommate</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+  <script type="text/javascript", src="../static/js/button_dynamic.js"></script>
+  <script type="text/javascript", src="../static/js/main.js"></script>
 </head>
 
 <body>
   <header>
       <div class="logo">
-        <a href="#"><img src="logo.png" alt="logo_img"></a>
+        <a href="#"><img src="../static/image/logo.png" alt="logo_img"></a>
       </div>
       <ul class="nav-links">
         <li><a href="#">룸메이트 추천</a></li>
@@ -27,20 +29,29 @@
       <p>조건을 걸어 본인과 잘 맞는 룸메이트의 프로필을 조회해보세요!</p>
     </div>
     <div class="filter">
-      <button>나이</button>
-      <button>학번</button>
-      <button>전공</button>
-      <button>취침시간</button>
-      <button>흡연여부</button>
-      <button>청소주기</button>
-      <button>음주빈도</button>
-      <button>MBTI</button>
+      <button id="age" onclick="return add_text('age')">나이</button>
+      <button id="age_button"></button>
+      <button id="student" onclick="return add_text('student')">학번</button>
+      <button id="student_button"></button>
+      <button id="major" onclick="return add_text('major')" >전공</button>
+      <button id="major_button"></button>
+      <button id="bed_time" onclick="return add_text('bed_time')">취침시간</button>
+      <button id="bed_time_button"></button>
+      <button id="cigaratte" onclick="return add_text('cigaratte')">흡연여부</button>
+      <button id="cigaratte_button"></button>
+      <button id="clean_rate" onclick="return add_text('clean_rate')">청소주기</button>
+      <button id="clean_rate_button"></button>
+      <button id="drunk_rate" onclick="return add_text('drunk_rate')">음주빈도</button>
+      <button id="drunk_rate_button"></button>
+      <button id="mbti" onclick="return add_text('mbti')">MBTI</button>
+      <button id="mbti_button"></button>
       <div class="searchBar"></div>
     </div>
+    <script type="text/javascript" src="../static/js/button_dynamic.js"></script>
   </nav>
   <main>
     <div class="roommate">
-      <img src="sky.jpg" alt="img 1">
+      <img src="../static/image/sky.jpg" alt="img 1">
       <h2>" 자기소개 한 문장 레고 "</h2>
       <ul class="sum_profile">
         <li>23학번</li>
@@ -50,7 +61,7 @@
       <button>More</button>
     </div>
     <div class="roommate">
-      <img src="starry.jpg" alt="img 2">
+      <img src="../static/image/starry.jpg" alt="img 2">
       <h2>" 자기소개 한 문장 레고 "</h2>
       <ul class="sum_profile">
         <li>23학번</li>
@@ -60,7 +71,7 @@
       <button>More</button>
     </div>
     <div class="roommate">
-      <img src="blue.jpg" alt="img 3">
+      <img src="../static/image/blue.jpg" alt="img 3">
       <h2>" 자기소개 한 문장 레고 "</h2>
       <ul class="sum_profile">
         <li>23학번</li>
@@ -72,7 +83,7 @@
   </main>
   <main>
     <div class="roommate">
-      <img src="sky.jpg" alt="img 1">
+      <img src="../static/image/sky.jpg" alt="img 1">
       <h2>" 자기소개 한 문장 레고 "</h2>
       <ul class="sum_profile">
         <li>23학번</li>
@@ -82,7 +93,7 @@
       <button>More</button>
     </div>
     <div class="roommate">
-      <img src="starry.jpg" alt="img 2">
+      <img src="../static/image/starry.jpg" alt="img 2">
       <h2>" 자기소개 한 문장 레고 "</h2>
       <ul class="sum_profile">
         <li>23학번</li>
@@ -92,7 +103,7 @@
       <button>More</button>
     </div>
     <div class="roommate">
-      <img src="blue.jpg" alt="img 3">
+      <img src="../static/image/blue.jpg" alt="img 3">
       <h2>" 자기소개 한 문장 레고 "</h2>
       <ul class="sum_profile">
         <li>23학번</li>
