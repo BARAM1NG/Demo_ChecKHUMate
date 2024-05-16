@@ -1,0 +1,936 @@
+.my-page-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .my-page-my-page {
+    width: 100%;
+    height: 768px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: var(--dl-color-colors-white);
+  }
+  .my-page-rectangle {
+    top: 300px;
+    left: 95px;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .my-page-text {
+    top: 520px;
+    left: 120px;
+    color: var(--dl-color-colors-black);
+    width: 400px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 40px;
+  }
+  .my-page-island-constructor-active {
+    top: 319px;
+    left: 1059px;
+    width: 284px;
+    height: 56px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: rgba(110, 65, 226, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+  }
+  .my-page-frame137 {
+    gap: 4px;
+    top: 13px;
+    left: 23px;
+    width: 194px;
+    height: 36px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .my-page-head {
+    gap: 8px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+  }
+  .my-page-text04 {
+    color: var(--dl-color-colors-black);
+    height: auto;
+    font-size: 16px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .my-page-radio {
+    gap: 12px;
+    top: 18px;
+    left: 251px;
+    width: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  .my-page-group116 {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(10, 10, 10, 1);
+  }
+  .my-page-group116.button {
+    color: var(--dl-color-theme-neutral-light);
+    display: inline-block;
+    padding: 1rem 0.4rem;
+    border-color: var(--dl-color-theme-neutral-dark);
+    border-width: 1px;
+    border-radius: 1px;
+    background-color: var(--dl-color-theme-neutral-light);
+  }
+  .my-page-rectangle23 {
+    top: 7px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100px;
+  }
+  .my-page-island-constructor-active1 {
+    top: 389px;
+    left: 1059px;
+    width: 284px;
+    height: 56px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: rgba(10, 10, 10, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+  }
+  .my-page-frame1371 {
+    gap: 4px;
+    top: 13px;
+    left: 23px;
+    width: 194px;
+    height: 36px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .my-page-head1 {
+    gap: 8px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+  }
+  .my-page-text06 {
+    color: var(--dl-color-colors-black);
+    height: auto;
+    font-size: 16px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .my-page-radio1 {
+    gap: 12px;
+    top: 18px;
+    left: 251px;
+    width: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+  .my-page-group1161 {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(10, 10, 10, 1);
+  }
+  .my-page-rectangle231 {
+    top: 7px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100px;
+  }
+  .my-page-headeractive {
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 76px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-image {
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 76px;
+    position: absolute;
+  }
+  .my-page-group113 {
+    top: 6px;
+    left: 800px;
+    width: 356px;
+    height: 71px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .my-page-tab {
+    top: 1px;
+    left: 0px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .my-page-frame116 {
+    width: 1px;
+    height: 21px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-text08 {
+    color: var(--dl-color-colors-gray);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .my-page-frame115 {
+    width: 1px;
+    height: 25px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-tab1 {
+    top: 1px;
+    left: 117px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    box-sizing: content-box;
+    align-items: center;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 0 0 1px;
+    flex-direction: column;
+    background-color: var(--dl-color-colors-white);
+  }
+  .my-page-frame1161 {
+    width: 1px;
+    height: 21px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-text10 {
+    color: var(--dl-color-colors-gray);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .my-page-frame1151 {
+    width: 1px;
+    height: 25px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-tab2 {
+    top: 1px;
+    left: 223px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .my-page-frame1162 {
+    width: 1px;
+    height: 21px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-text12 {
+    color: var(--dl-color-colors-gray);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .my-page-frame1152 {
+    width: 1px;
+    height: 25px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-tab3 {
+    top: 0px;
+    left: 296px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .my-page-frame1163 {
+    width: 1px;
+    height: 21px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-text14 {
+    color: var(--dl-color-colors-gray);
+    height: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .my-page-frame1153 {
+    width: 1px;
+    height: 25px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-logo1 {
+    top: 15px;
+    left: 30px;
+    width: 130px;
+    height: 45px;
+    position: absolute;
+  }
+  .my-page-frame303 {
+    top: 0px;
+    left: 787px;
+    width: 393px;
+    height: 77px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-frame302 {
+    top: 85px;
+    left: 488px;
+    width: 506px;
+    height: 652px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-frame118 {
+    gap: 13px;
+    top: 106px;
+    left: 53px;
+    width: 50px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-text16 {
+    color: var(--dl-color-colors-black);
+    width: 360px;
+    height: auto;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-frame119 {
+    gap: 13px;
+    top: 246px;
+    left: 51px;
+    width: 50px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-text18 {
+    color: var(--dl-color-colors-black);
+    width: 360px;
+    height: auto;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-text20 {
+    top: 177px;
+    left: 53px;
+    color: var(--dl-color-colors-black);
+    width: 329px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-frame120 {
+    gap: 13px;
+    top: 500px;
+    left: 17px;
+    width: 99px;
+    height: 70px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-frame122 {
+    gap: 15px;
+    top: 392px;
+    left: 17px;
+    width: 99px;
+    height: 36px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-text22 {
+    color: var(--dl-color-colors-black);
+    width: 360px;
+    height: auto;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-text26 {
+    top: 464px;
+    left: 35px;
+    color: var(--dl-color-colors-black);
+    width: 100px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-frame124 {
+    gap: 13px;
+    top: 319px;
+    left: 42px;
+    width: 72px;
+    height: 36px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-text30 {
+    color: var(--dl-color-colors-black);
+    width: 360px;
+    height: auto;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-input {
+    top: 90px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container01 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text34 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input1 {
+    top: 18px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default1 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container02 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text36 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input2 {
+    top: 162px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default2 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container03 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text38 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input3 {
+    top: 234px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default3 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container04 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text40 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input4 {
+    top: 306px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default4 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container05 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text42 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input5 {
+    top: 378px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default5 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container06 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text44 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input6 {
+    top: 450px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default6 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container07 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text46 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-input7 {
+    top: 522px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default7 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container08 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text48 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-frame125 {
+    gap: 13px;
+    top: 537px;
+    left: 17px;
+    width: 99px;
+    height: 36px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-text50 {
+    color: var(--dl-color-colors-black);
+    width: 360px;
+    height: auto;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-input8 {
+    top: 594px;
+    left: 126px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-input-container-default8 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-container09 {
+    top: 0px;
+    left: 0px;
+    width: 363px;
+    height: 56px;
+    position: absolute;
+    border-radius: 4px;
+  }
+  .my-page-text54 {
+    top: 14px;
+    left: 16px;
+    color: var(--dl-color-colors-black);
+    width: 331px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 28px;
+  }
+  .my-page-frame126 {
+    gap: 13px;
+    top: 609px;
+    left: 17px;
+    width: 99px;
+    height: 36px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .my-page-text56 {
+    color: var(--dl-color-colors-black);
+    width: 360px;
+    height: auto;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-text58 {
+    top: 35px;
+    left: 51px;
+    color: var(--dl-color-colors-black);
+    width: 68px;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    line-height: 32px;
+  }
+  .my-page-frame113 {
+    gap: 12px;
+    top: 21px;
+    left: 1181px;
+    width: 162px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: center;
+  }
+  .my-page-text60 {
+    color: var(--dl-color-colors-primary);
+    width: 106px;
+    height: auto;
+    text-align: right;
+    line-height: 24px;
+  }
+  .my-page-avatar {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .my-page-ellipse1 {
+    top: 0px;
+    left: 0px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+  }
+  .my-page-text62 {
+    top: 5.1px;
+    left: 5px;
+    color: rgba(0, 0, 0, 1);
+    width: 20px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Bold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
