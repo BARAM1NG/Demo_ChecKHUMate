@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>my_page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="/frontend/static/css/my_page_style.css" />
+    <div>
+      <link href="/frontend/static/css/my_page.css" rel="stylesheet" />
+
+      <div class="my-page-container">
+        <div class="my-page-my-page">
+          <img
+            src="/frontend/static/image/mypage/KakaoTalk_20240514_121316096.jpg".png"
+            alt="Rectangle2716"
+            class="my-page-rectangle"
+          />
+          <div class="my-page-frame120"></div>
+          <span class="my-page-text Heading4">
+            <span>“ 룸메랑 즐겁게 </span>
+            <br />
+            <span>지내고 싶습니다 ”</span>
+          </span>
+          <div class="my-page-island-constructor-active">
+            <div class="my-page-frame137">
+              <div class="my-page-head">
+                <span class="my-page-text04"><span>공개설정</span></span>
+              </div>
+            </div>
+            <div class="my-page-radio">
+              <div class="my-page-group116">
+                <!-- <button class=".button"> <- 요 부분을 css로는 못하겠어요 ㅠㅜ
+                  <img src="/frontend/static/image/mypage/rectangle23i2716-pq7u-200h.png" 
+                  alt="Rectangle23I2716" 
+                  class="my-button-image">
+                </button>
+                /> -->
+              </div>
+            </div>
+          </div>
+          <div class="my-page-island-constructor-active1">
+            <div class="my-page-frame1371">
+              <div class="my-page-head1">
+                <span class="my-page-text06"><span>비공개</span></span>
+              </div>
+            </div>
+            <div class="my-page-radio1">
+              <div class="my-page-group1161">
+                <img
+                  src="/frontend/static/image/mypage/rectangle23i2716-qnz-200h.png"
+                  alt="Rectangle23I2716"
+                  class="my-page-rectangle231"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="my-page-headeractive">
+            <img
+              src="/frontend/static/image/mypage/imagei2716-v2e6-200h.png"
+              alt="IMAGEI2716"
+              class="my-page-image"
+            />
+            <div class="my-page-group113">
+              <div class="my-page-tab">
+                <div class="my-page-frame116"></div>
+                <span class="my-page-text08 16Paragraph2">
+                  <span>룸메이트 찾기</span>
+                </span>
+                <div class="my-page-frame115"></div>
+              </div>
+              <div class="my-page-tab1">
+                <div class="my-page-frame1161"></div>
+                <span class="my-page-text10 16Paragraph2">
+                  <span>Community</span>
+                </span>
+                <div class="my-page-frame1151"></div>
+              </div>
+              <div class="my-page-tab2">
+                <div class="my-page-frame1162"></div>
+                <span class="my-page-text12 16Paragraph2">
+                  <span>AI추천</span>
+                </span>
+                <div class="my-page-frame1152"></div>
+              </div>
+              <div class="my-page-tab3">
+                <div class="my-page-frame1163"></div>
+                <span class="my-page-text14 16Paragraph2">
+                  <span>Member</span>
+                </span>
+                <div class="my-page-frame1153"></div>
+              </div>
+            </div>
+            <img
+              src="/frontend/static/image/mypage/logo1i2716-2sn-200h.png"
+              alt="logo1I2716"
+              class="my-page-logo1"
+            />
+            <div class="my-page-frame303"></div>
+          </div>
+          <div class="my-page-frame302">
+            <div class="my-page-frame118">
+              <span class="my-page-text16 24Heading5"><span>나이</span></span>
+            </div>
+            <div class="my-page-frame119">
+              <span class="my-page-text18 24Heading5"><span>전공</span></span>
+            </div>
+            <span class="my-page-text20 24Heading5"><span>학번</span></span>
+            <div class="my-page-frame122">
+              <span class="my-page-text22 24Heading5">
+                <span>취침시간</span>
+                <br />
+                <span></span>
+              </span>
+            </div>
+            <span class="my-page-text26 24Heading5">
+              <span>알코올</span>
+              <br />
+              <span></span>
+            </span>
+            <div class="my-page-frame124">
+              <span class="my-page-text30 24Heading5">
+                <span>MBTI</span>
+                <br />
+                <span></span>
+              </span>
+            </div>
+            <div class="my-page-input">
+              <div class="my-page-input-container-default">
+                <img
+                  src="/frontend/static/image/mypage/containeri2712-ulys-200h.png"
+                  alt="ContainerI2712"
+                  class="my-page-container01"
+                />
+              </div>
+              <span class="my-page-text34 20Paragraph1"><span>24</span></span>
+            </div>
+            <div class="my-page-input1">
+              <div class="my-page-input-container-default1">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-rr8-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container02"
+                />
+              </div>
+              <span class="my-page-text36 20Paragraph1">
+                <span>이준혁</span>
+              </span>
+            </div>
+            <div class="my-page-input2">
+              <div class="my-page-input-container-default2">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-ipxg-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container03"
+                />
+              </div>
+              <span class="my-page-text38 20Paragraph1">
+                <span>2020105048</span>
+              </span>
+            </div>
+            <div class="my-page-input3">
+              <div class="my-page-input-container-default3">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-7o1r-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container04"
+                />
+              </div>
+              <span class="my-page-text40 20Paragraph1">
+                <span>체육학과</span>
+              </span>
+            </div>
+            <div class="my-page-input4">
+              <div class="my-page-input-container-default4">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-4pm-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container05"
+                />
+              </div>
+              <span class="my-page-text42 20Paragraph1"><span>ENTJ</span></span>
+            </div>
+            <div class="my-page-input5">
+              <div class="my-page-input-container-default5">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-7kbh-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container06"
+                />
+              </div>
+              <span class="my-page-text44 20Paragraph1">
+                <span>1-2 am</span>
+              </span>
+            </div>
+            <div class="my-page-input6">
+              <div class="my-page-input-container-default6">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-7ek-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container07"
+                />
+              </div>
+              <span class="my-page-text46 20Paragraph1"><span>가끔</span></span>
+            </div>
+            <div class="my-page-input7">
+              <div class="my-page-input-container-default7">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-766-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container08"
+                />
+              </div>
+              <span class="my-page-text48 20Paragraph1">
+                <span>그때그때 바로</span>
+              </span>
+            </div>
+            <div class="my-page-frame125">
+              <span class="my-page-text50 24Heading5">
+                <span>청소주기</span>
+                <br />
+                <span></span>
+              </span>
+            </div>
+            <div class="my-page-input8">
+              <div class="my-page-input-container-default8">
+                <img
+                  src="/frontend/static/image/mypage/containeri2716-u71t-200h.png"
+                  alt="ContainerI2716"
+                  class="my-page-container09"
+                />
+              </div>
+              <span class="my-page-text54 20Paragraph1">
+                <span>아니오</span>
+              </span>
+            </div>
+            <div class="my-page-frame126">
+              <span class="my-page-text56 24Heading5">
+                <span>흡연여부</span>
+              </span>
+            </div>
+            <span class="my-page-text58 24Heading5"><span>이름</span></span>
+          </div>
+          <div class="my-page-frame113">
+            <span class="my-page-text60 16Paragraph2"><span>JJO._.ON</span></span>
+            <div class="my-page-avatar">
+              <img
+                src="/frontend/static/image/mypage/ellipse1i2723-j3dc-200h.png"
+                alt="Ellipse1I2723"
+                class="my-page-ellipse1"
+              />
+              <span class="my-page-text62"><span>🦁</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
