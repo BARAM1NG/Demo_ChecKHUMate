@@ -1,6 +1,7 @@
 // modal.js
 let modal = document.getElementById("filterModal");
-let btn = document.getElementById("filterBtn");
+// 클래스 이름으로 버튼 선택
+let btn = document.querySelector(".category-button-a");
 let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
@@ -20,5 +21,4 @@ window.onclick = function(event) {
 document.getElementById("filterForm").onsubmit = function(event) {
     event.preventDefault();
     // 필터링 로직 구현
-    // 예: 입력된 값을 가져와서 해당 조건에 맞는 룸메이트 정보를 조회하는 로직
 }

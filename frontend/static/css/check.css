@@ -174,16 +174,8 @@ main {
     color: #A40F16;
 }
 
-/*
-.searchBar{
-    width: 150px;
-    height: 60px;
-    background-color: #007bff;
-} */
 
 /* 여기서부터 main */
-
-
 
 
 /* 카테고리창 코드 */
@@ -230,6 +222,9 @@ main {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 20px;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .dropdown-menu a {
@@ -244,26 +239,42 @@ main {
 }
 
 
+.checked {
+    background-image: url('../image/checkpage/check.png'); /* 체크 아이콘 이미지 경로 설정 */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* 체크 아이콘의 위치 설정 */
+    background-size: 15px 15px;
+    padding-right: 10px; /* 텍스트와 아이콘 사이의 간격 조절 */
+}
+
+
 /* 모달창 스타일 */
 .modal {
-    display: none; /* 기본적으로 숨김 */
-    /*position: fixed; !* 화면에 고정 *!*/
+    display: none;
+    flex-direction: column;
     z-index: 1; /* 다른 요소보다 위에 */
-    left: 0;
-    top: 0;
-    width: 300px; /* 전체 너비 */
-    height: 400px; /* 전체 높이 */
-    overflow: auto; /* 내용이 넘칠 경우 스크롤 */
-    background-color: rgb(255, 255, 255); /* 배경색 흰색 */
-    padding-top: 60px;
+    width: 400px;
+    height: 500px;
+    /*overflow: auto; !* 내용이 넘칠 경우 스크롤 *!*/
+    background-color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-left:20px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 그림자 효과 */
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* 모달 컨텐츠 스타일 */
 .modal-content {
+    position: absolute;
+    display: none;
     background-color: #fefefe;
-    margin: 5% auto; /* 상하 5% 좌우 자동 */
-    padding: 20px;
+    /*margin: 10% auto; !* 상하 5% 좌우 자동 *!*/
+    /*padding: 20px;*/
     border: 1px solid #888;
     width: 100%; /* 모달창 너비 */
 }
@@ -281,6 +292,36 @@ main {
 
 #applyFilters:hover {background-color: #6a5acd} /* 마우스를 올렸을 때의 배경색 변경 */
 
+/*버튼 간격 설정*/
+#filterForm >*{
+    margin-top: 15px;
+}
+
+#filterForm label{
+    margin-left: 90px;
+    height: 40px;
+}
+
+#filterForm select{
+    height: 20px;
+}
+
+#filterForm input{
+    height: 20px;
+}
+
+/* 필터링 조건과 적용 버튼 중앙 정렬 */
+#filterForm h2{
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#filterForm #applyFilters{
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 94%;
+}
 
 /*검색 창*/
 
@@ -326,6 +367,3 @@ main {
 }
 
 /* Roommate */
-
-
-

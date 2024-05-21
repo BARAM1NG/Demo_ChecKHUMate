@@ -14,7 +14,7 @@
     <img class='logo' src='../static/image/logo.png'>
   </a>
   <div class="tapWrap">
-    <div class=roommate>
+    <div class="roommate">
       <a href="./check.html">룸메이트 찾기</a>
     </div>
     <div class="community">
@@ -30,7 +30,7 @@
       <a href="./my_page_2.html">My Page</a>
     </div>
   </div>
-  <div class=profile_box>
+  <div class="profile_box">
     <a href="./my_profile.html">Profile</a>
   </div>
   <!--<div class="line"></div>-->
@@ -46,18 +46,18 @@
 <main>
   <div class="category" id="categoryFiltering">
     <button class="category-button-a">필터링</button>
-    <div class="dropdown-menu">
+<!--    <div class="dropdown-menu">-->
       <div id="filterModal" class="modal">
-      <span class="close">&times;</span>
-        <h2>필터링 조건</h2>
+        <span class="close">&times;</span>
         <form id="filterForm">
+          <h2>필터링 조건</h2>
           <label for="age">나이:</label>
           <select id="age" name="age">
             <option value="2002">05년생</option>
             <option value="2003">04년생</option>
             <option value="2004">03년생</option>
             <option value="2005">02년생</option>
-            <option value="2005">01년생 이하</option>
+            <option value="2001">01년생 이전</option>
           </select><br>
 
           <label for="year">학번:</label>
@@ -66,7 +66,7 @@
             <option value="2022">23학번</option>
             <option value="2023">22학번</option>
             <option value="2024">21학번</option>
-            <option value="2024">20학번 이하</option>
+            <option value="2020">20학번 이전</option>
           </select><br>
 
           <label for="major">전공:</label>
@@ -74,23 +74,32 @@
 
           <label for="bedtime">취침시간:</label>
           <select id="bedtime" name="bedtime">
-            <option value="early">일찍 잠</option>
-            <option value="late">늦게 잠</option>
+            <option value="one">22~23시</option>
+            <option value="two">23시~00시</option>
+            <option value="three">00시~01시</option>
+            <option value="four">01시~02시</option>
+            <option value="five">02시 이후</option>
           </select><br>
 
           <label for="smoking">흡연 여부:</label>
           <select id="smoking" name="smoking">
-            <option value="no">비흡연</option>
-            <option value="yes">흡연</option>
+            <option value="no">비흡연자</option>
+            <option value="yes">흡연자</option>
           </select><br>
 
           <label for="cleaning">청소 주기:</label>
-          <input type="text" id="cleaning" name="cleaning"><br>
+          <select id="cleaning" name="cleaning">
+            <option value="sometimes">그때그때</option>
+            <option value="middle">중간</option>
+            <option value="all">한번에</option>
+          </select><br>
 
-          <label for="alcohol">알코올:</label>
+          <label for="alcohol">술자리 빈도:</label>
           <select id="alcohol" name="alcohol">
-            <option value="no">비음주</option>
-            <option value="yes">음주</option>
+            <option value="no">안마심</option>
+            <option value="commonly">보통</option>
+            <option value="often">자주</option>
+            <option value="everyday">매일</option>
           </select><br>
 
           <label for="mbti">MBTI:</label>
@@ -99,7 +108,7 @@
           <button type="button" id="applyFilters">적용</button>
         </form>
       </div>
-    </div>
+<!--    </div>-->
   </div>
 
   <div class="category" id="ageCategory">
@@ -130,7 +139,9 @@
       <a href="#">인문대</a>
       <a href="#">사회과학</a>
       <a href="#">공대</a>
-      <a href="#">자연과학</a>
+      <a href="#">자연과학대</a>
+      <a href="#">예체능</a>
+      <a href="#">의학 및 보건</a>
     </div>
   </div>
 
@@ -174,10 +185,22 @@
   <div class="category" id="MbtiCategory">
     <button class="category-button-b">MBTI</button>
     <div class="dropdown-menu">
+      <a href="#">ESTP</a>
+      <a href="#">ESFP</a>
+      <a href="#">ENFP</a>
+      <a href="#">ENTP</a>
       <a href="#">ESTJ</a>
-      <a href="#">ISTJ</a>
       <a href="#">ESFJ</a>
+      <a href="#">ENFJ</a>
+      <a href="#">ENTJ</a>
+      <a href="#">ISTJ</a>
       <a href="#">ISFJ</a>
+      <a href="#">INFJ</a>
+      <a href="#">INTJ</a>
+      <a href="#">ISTP</a>
+      <a href="#">ISFP</a>
+      <a href="#">INFP</a>
+      <a href="#">INTP</a>
     </div>
   </div>
 
@@ -186,9 +209,12 @@
     <button class="search-button">검색</button>
   </div>
 
+
 </main>
 
 <script src="../static/js/modal.js"></script>
+<script src="../static/js/addEventListener.js"></script>
+
 </body>
 
 </html>
