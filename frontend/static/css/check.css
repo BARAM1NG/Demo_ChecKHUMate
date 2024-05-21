@@ -6,34 +6,93 @@ body {
     padding: 0;
 }
 
-/* 기본 스타일 */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #333;
     box-sizing: border-box;
 }
 
-/* 헤더 스타일 */
+.logo {
+    height: 50px;
+}
+
 header {
     width: 100%;
-    height: 60px;
-    color: #666;
+    height: 75px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-    border-bottom: #888 1px solid;
+    border-bottom: solid 1px #999;
+    padding : 0 30px;
 }
+
+.tapWrap {
+    width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tapWrap>div {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.tapWrap>div>a{
+    color: #666;
+    cursor: pointer;
+}
+.tapWrap>div>a:hover{
+    color: #A40F16;
+    font-weight: bold;
+}
+
+.mypage{
+    width: 80px;
+}
+
+.roommate {
+    width:125px;
+}
+
+.community {
+    width:100px;
+}
+
+.ai_recommend {
+    width:60px;
+}
+
+.member {
+    width:80px;
+}
+
+.profile_box {
+    background-color: #6E41E2;
+    width: 100px;
+    height: 44px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile_box>a{
+    color : #fff;
+}
+
 
 nav {
     width: 100%;
     height: 150px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     padding: 0 50px 0 50px;
 }
 
@@ -124,67 +183,7 @@ main {
 
 /* 여기서부터 main */
 
-.roommate {
-    width: 350px;
-    height: 350px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    box-sizing: border-box;
-    margin: 0 15px 0 15px;
-}
 
-.roommate img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 30px;
-}
-
-.roommate h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.roommate p {
-    font-size: 14px;
-    color: #666;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.roommate button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.roommate button:hover {
-    background-color: #0056b3;
-}
-
-.sum_profile {
-    display: flex;
-    list-style: none;
-    margin-bottom: 50px;
-}
-
-.sum_profile li {
-    margin-left: 20px;
-    font-size: 14px;
-}
 
 
 /* 카테고리창 코드 */
