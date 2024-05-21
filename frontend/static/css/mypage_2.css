@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 50px;
+    /*margin-left: 30px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+
+header {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #999;
+    padding: 0 30px;
+}
+
+.tapWrap {
+    width: 500px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    /*background-color: pink;*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tapWrap>div {
+    margin: 0 10px;
+    /*background-color: aqua;*/
+    text-align: center;
+}
+
+.tapWrap>div>a {
+    color: #666;
+    cursor: pointer;
+}
+
+.tapWrap>div>a:hover {
+    color: #A40F16;
+    font-weight: bold;
+}
+
+.tapWrap .mypage>a{
+    color: #A40F16;
+    font-weight: bold;
+}
+.mypage{
+    width: 80px;
+}
+
+.roommate {
+    width: 125px;
+    /*
+	height:70px;
+    color:rgba(17.00000088661909, 17.00000088661909, 17.00000088661909, 0.47999998927116394);
+    position: absolute;
+    top: 30px;
+    left: 700px;*/
+}
+
+.community {
+    width: 100px;
+    /*
+	height:70px;
+    color:rgba(17.00000088661909, 17.00000088661909, 17.00000088661909, 0.47999998927116394);
+    position: absolute;
+    top: 30px;
+    left: 830px;*/
+}
+
+.ai_recommend {
+    width: 60px;
+    /*
+	height:70px;
+    color:rgba(17.00000088661909, 17.00000088661909, 17.00000088661909, 0.47999998927116394);
+    position: absolute;
+    top: 30px;
+    left: 960px;*/
+}
+
+.member {
+    width: 80px;
+    /*height:70px;
+    color:rgba(17.00000088661909, 17.00000088661909, 17.00000088661909, 0.47999998927116394);
+    position: absolute;
+    top: 30px;
+    left: 1070px;*/
+}
+
+.profile_box {
+    background-color: #6E41E2;
+    width: 100px;
+    height: 44px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*
+    position: absolute;
+    top: 17px;
+    left: 1250px;
+    */
+}
+
+.profile_box>a {
+    color: #fff;
+}
+
+
+/* Main */
+main {
+    width: 100%;
+    height: 550px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myPic,
+.myInfo,
+.radioBtn {
+    display: flex;
+    flex-direction: column;
+    /* 세로로 나열 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
+    /* 수평 중앙 정렬 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    height: 100%;
+}
+
+.myPic {
+    width: 25%;
+    height: 100%;
+
+}
+
+.imgWrap {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.imgWrap img {
+    max-width: 100%;
+    /* 이미지가 부모 요소의 너비를 넘지 않도록 설정 */
+    height: auto;
+    /* 이미지 비율을 유지 */
+    border-radius: 10px;
+}
+
+/* myInfo */
+.myInfo {
+    width: 50%;
+    height: 100%;
+    padding-top: 20px;
+
+    gap: 23px;
+}
+
+.information {
+    width: 400px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.infoTitle {
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.infoContent {
+    width: 300px;
+    height: 100%;
+    padding-left: 20px;
+    justify-content: left;
+    text-align: left;
+    line-height: 40px;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(153, 153, 153, 0.3);
+}
+
+/* radioBtn */
+.radioBtn {
+    width: 25%;
+    height: 100%;
+    gap: 20px;
+
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    padding: 10px;
+    border: 3px solid #666;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.radio-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.radio-mark {
+    width: 20px;
+    height: 20px;
+    border: 6px solid #666;
+    border-radius: 50%;
+    position: relative;
+}
+
+.radio-mark::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/*
+.custom-radio:nth-child(1) .radio-mark {
+    border-color: #6E41E2;
+}
+
+
+.custom-radio:nth-child(1) .radio-label {
+    color: #6E41E2;
+}*/
+
+.custom-radio input:checked+.radio-label+.radio-mark::after {
+    display: block;
+}
+
+.selected {
+    border-color: #6E41E2;
+}
+.selected .radio-label {
+    color: #6E41E2;
+}
+
+.selected .radio-mark {
+    border-color: #6E41E2;
+}
+
+.deselected {
+    border-color: #666;
+}
+
+.deselected .radio-label {
+    color: #666;
+}
+
+.deselected .radio-mark {
+    border-color: #666;
+}
