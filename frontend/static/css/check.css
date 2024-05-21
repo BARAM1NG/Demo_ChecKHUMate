@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* 헤더 스타일 */
+header {
+    width: 100%;
+    height: 60px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: #888 1px solid;
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 0 50px 0 50px;
+}
+
+main {
+    width: 100%;
+    height: 400px;
+    padding: 25px 50px 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    /*gap: 20px;*/
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo a img {
+    height: 40px;
+    /* 로고 이미지 높이 조정 */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.nav-links li:nth-child(1)>a {
+    color: #A40F16;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #A40F16;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 여기서부터 nav */
+
+.title {
+    height: 150px;
+    border-bottom: #666 2px solid;
+}
+
+.title h1 {
+    font-size: 35px;
+    padding: 30px 0 30px 0;
+}
+
+.filter {
+    height: 70px;
+}
+
+.filter button {
+    width: 100px;
+    height: 30px;
+    margin: 20px 15px 0 15px;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: #333 2px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.filter button:hover {
+    font-weight: bolder;
+    border: #A40F16 4px solid;
+    color: #A40F16;
+}
+
+/*
+.searchBar{
+    width: 150px;
+    height: 60px;
+    background-color: #007bff;
+} */
+
+/* 여기서부터 main */
+
+.roommate {
+    width: 350px;
+    height: 350px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 15px 0 15px;
+}
+
+.roommate img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.roommate h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.roommate p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.roommate button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.roommate button:hover {
+    background-color: #0056b3;
+}
+
+.sum_profile {
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.sum_profile li {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+/* 카테고리창 코드 */
+.category {
+    /*position:relative;*/
+    /*width: 1000px;*/
+    height: 100px;
+    display: inline-block; /* 각 버튼이 한 줄에 나란히 배치되도록 설정 */
+    margin: 7px;
+    text-align: left;
+}
+
+.category-button-a, .category-button-b {
+    width: 100px; /* 고정 너비 */
+    height: 40px; /* 고정 높이 */
+    display: flex;
+    justify-content: center; /* 텍스트 수평 중앙 정렬 */
+    align-items: center; /* 텍스트 수직 중앙 정렬 */
+}
+
+.category-button-a {
+    display: block;
+    border-color:#6E41E2;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #6E41E2;
+    color: white;
+    cursor: pointer;
+}
+
+.category-button-b {
+    border-color:#6E41E2;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: #6E41E2;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.category:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* 모달창 스타일 */
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    /*position: fixed; !* 화면에 고정 *!*/
+    z-index: 1; /* 다른 요소보다 위에 */
+    left: 0;
+    top: 0;
+    width: 300px; /* 전체 너비 */
+    height: 400px; /* 전체 높이 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤 */
+    background-color: rgb(255, 255, 255); /* 배경색 흰색 */
+    padding-top: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 그림자 효과 */
+}
+
+/* 모달 컨텐츠 스타일 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 상하 5% 좌우 자동 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* 모달창 너비 */
+}
+
+/* 적용 버튼 스타일 */
+#applyFilters {
+    background-color: #7B68EE; /* 보라색 배경 */
+    color: white; /* 흰색 글씨 */
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+#applyFilters:hover {background-color: #6a5acd} /* 마우스를 올렸을 때의 배경색 변경 */
+
+
+/*검색 창*/
+
+.search-container {
+    display: flex;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.search-input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    width: 187px;
+    height: 41px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.search-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 58px;
+    height: 41px;
+    background: #6E41E2;
+    border-radius: 8px;
+    color: #FFFFFF; /* Text color for button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Roommate */
+
+
+
