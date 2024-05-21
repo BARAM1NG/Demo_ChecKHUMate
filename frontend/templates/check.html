@@ -5,115 +5,177 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Check your Roommate</title>
-  <link rel="stylesheet" href="../static/css/style.css" type="text/css">
-  <script type="text/javascript", src="../static/js/button_dynamic.js"></script>
-  <script type="text/javascript", src="../static/js/main.js"></script>
+  <link rel="stylesheet" href="../static/css/check.css" type="text/css">
 </head>
 
 <body>
-  <header>
-      <div class="logo">
-        <a href="#"><img src="../static/image/logo.png" alt="logo_img"></a>
+<header>
+  <div class="logo">
+    <a href="#"><img src="../static/image/logo.png" alt="logo_img"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#">룸메이트 추천</a></li>
+    <li><a href="#">Community</a></li>
+    <li><a href="#">AI 추천</a></li>
+    <li><a href="#">Member</a></li>
+    <li><a href="#">My page</a></li>
+  </ul>
+</header>
+
+<nav>
+  <div class="title">
+    <h1>Check your Roommate</h1>
+    <p>조건을 걸어 본인과 잘 맞는 룸메이트의 프로필을 조회해보세요!</p>
+  </div>
+</nav>
+
+<main>
+  <div class="category" id="categoryFiltering">
+    <button class="category-button-a", id="filterBtn">필터링</button>
+    <div class="dropdown-menu">
+      <div id="filterModal" class="modal">
+      <span class="close">&times;</span>
+        <h2>필터링 조건</h2>
+        <form id="filterForm">
+          <label for="age">나이:</label>
+          <select id="age" name="age">
+            <option value="2002">05년생</option>
+            <option value="2003">04년생</option>
+            <option value="2004">03년생</option>
+            <option value="2005">02년생</option>
+            <option value="2005">01년생 이하</option>
+          </select><br>
+
+          <label for="year">학번:</label>
+          <select id="year" name="year">
+            <option value="2021">24학번</option>
+            <option value="2022">23학번</option>
+            <option value="2023">22학번</option>
+            <option value="2024">21학번</option>
+            <option value="2024">20학번 이하</option>
+          </select><br>
+
+          <label for="major">전공:</label>
+          <input type="text" id="major" name="major"><br>
+
+          <label for="bedtime">취침시간:</label>
+          <select id="bedtime" name="bedtime">
+            <option value="early">일찍 잠</option>
+            <option value="late">늦게 잠</option>
+          </select><br>
+
+          <label for="smoking">흡연 여부:</label>
+          <select id="smoking" name="smoking">
+            <option value="no">비흡연</option>
+            <option value="yes">흡연</option>
+          </select><br>
+
+          <label for="cleaning">청소 주기:</label>
+          <input type="text" id="cleaning" name="cleaning"><br>
+
+          <label for="alcohol">알코올:</label>
+          <select id="alcohol" name="alcohol">
+            <option value="no">비음주</option>
+            <option value="yes">음주</option>
+          </select><br>
+
+          <label for="mbti">MBTI:</label>
+          <input type="text" id="mbti" name="mbti"><br>
+
+          <button type="button" id="applyFilters">적용</button>
+        </form>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">룸메이트 추천</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">AI 추천</a></li>
-        <li><a href="#">Member</a></li>
-        <li><a href="#">My page</a></li>
-      </ul>
-  </header>
-  
-  <nav>
-    <div class="title">
-      <h1>Check your Roommate</h1>
-      <p>조건을 걸어 본인과 잘 맞는 룸메이트의 프로필을 조회해보세요!</p>
     </div>
-    <div class="filter">
-      <button id="age" onclick="return add_text('age')">나이</button>
-      <button id="age_button"></button>
-      <button id="student" onclick="return add_text('student')">학번</button>
-      <button id="student_button"></button>
-      <button id="major" onclick="return add_text('major')" >전공</button>
-      <button id="major_button"></button>
-      <button id="bed_time" onclick="return add_text('bed_time')">취침시간</button>
-      <button id="bed_time_button"></button>
-      <button id="cigaratte" onclick="return add_text('cigaratte')">흡연여부</button>
-      <button id="cigaratte_button"></button>
-      <button id="clean_rate" onclick="return add_text('clean_rate')">청소주기</button>
-      <button id="clean_rate_button"></button>
-      <button id="drunk_rate" onclick="return add_text('drunk_rate')">음주빈도</button>
-      <button id="drunk_rate_button"></button>
-      <button id="mbti" onclick="return add_text('mbti')">MBTI</button>
-      <button id="mbti_button"></button>
-      <div class="searchBar"></div>
+  </div>
+
+  <div class="category" id="ageCategory">
+    <button class="category-button-b">나이</button>
+    <div class="dropdown-menu">
+      <a href="#">05년생</a>
+      <a href="#">04년생</a>
+      <a href="#">03년생</a>
+      <a href="#">02년생</a>
+      <a href="#">01년생 이하</a>
     </div>
-    <script type="text/javascript" src="../static/js/button_dynamic.js"></script>
-  </nav>
-  <main>
-    <div class="roommate">
-      <img src="../static/image/sky.jpg" alt="img 1">
-      <h2>" 자기소개 한 문장 레고 "</h2>
-      <ul class="sum_profile">
-        <li>23학번</li>
-        <li>컴퓨터공학과</li>
-        <li>12 - 1시 취침</li>
-      </ul>
-      <button>More</button>
+  </div>
+
+  <div class="category" id="studentIdCategory">
+    <button class="category-button-b">학번</button>
+    <div class="dropdown-menu">
+      <a href="#">24학번</a>
+      <a href="#">23학번</a>
+      <a href="#">22학번</a>
+      <a href="#">21학번</a>
+      <a href="#">20학번 이하</a>
     </div>
-    <div class="roommate">
-      <img src="../static/image/starry.jpg" alt="img 2">
-      <h2>" 자기소개 한 문장 레고 "</h2>
-      <ul class="sum_profile">
-        <li>23학번</li>
-        <li>컴퓨터공학과</li>
-        <li>12 - 1시 취침</li>
-      </ul>
-      <button>More</button>
+  </div>
+
+  <div class="category" id="majorCategory">
+    <button class="category-button-b">전공</button>
+    <div class="dropdown-menu">
+      <a href="#">인문대</a>
+      <a href="#">사회과학</a>
+      <a href="#">공대</a>
+      <a href="#">자연과학</a>
     </div>
-    <div class="roommate">
-      <img src="../static/image/blue.jpg" alt="img 3">
-      <h2>" 자기소개 한 문장 레고 "</h2>
-      <ul class="sum_profile">
-        <li>23학번</li>
-        <li>컴퓨터공학과</li>
-        <li>12 - 1시 취침</li>
-      </ul>
-      <button>More</button>
+  </div>
+
+  <div class="category" id="bedTimeCategory">
+    <button class="category-button-b">취침시간</button>
+    <div class="dropdown-menu">
+      <a href="#">10-11</a>
+      <a href="#">11-12</a>
+      <a href="#">12-01</a>
+      <a href="#">01-02</a>
     </div>
-  </main>
-  <main>
-    <div class="roommate">
-      <img src="../static/image/sky.jpg" alt="img 1">
-      <h2>" 자기소개 한 문장 레고 "</h2>
-      <ul class="sum_profile">
-        <li>23학번</li>
-        <li>컴퓨터공학과</li>
-        <li>12 - 1시 취침</li>
-      </ul>
-      <button>More</button>
+  </div>
+
+  <div class="category" id="smokeCategory">
+    <button class="category-button-b">흡연 여부</button>
+    <div class="dropdown-menu">
+      <a href="#">흡연</a>
+      <a href="#">비흡연</a>
     </div>
-    <div class="roommate">
-      <img src="../static/image/starry.jpg" alt="img 2">
-      <h2>" 자기소개 한 문장 레고 "</h2>
-      <ul class="sum_profile">
-        <li>23학번</li>
-        <li>컴퓨터공학과</li>
-        <li>12 - 1시 취침</li>
-      </ul>
-      <button>More</button>
+  </div>
+
+  <div class="category" id="cleaningCategory">
+    <button class="category-button-b">청소 주기</button>
+    <div class="dropdown-menu">
+      <a href="#">바로바로</a>
+      <a href="#">중간</a>
+      <a href="#">한번에</a>
     </div>
-    <div class="roommate">
-      <img src="../static/image/blue.jpg" alt="img 3">
-      <h2>" 자기소개 한 문장 레고 "</h2>
-      <ul class="sum_profile">
-        <li>23학번</li>
-        <li>컴퓨터공학과</li>
-        <li>12 - 1시 취침</li>
-      </ul>
-      <button>More</button>
+  </div>
+
+  <div class="category" id="AlcholCategory">
+    <button class="category-button-b">알코올</button>
+    <div class="dropdown-menu">
+      <a href="#">안마심</a>
+      <a href="#">보통</a>
+      <a href="#">자주</a>
+      <a href="#">매일</a>
     </div>
-  </main>
+  </div>
+
+  <div class="category" id="MbtiCategory">
+    <button class="category-button-b">MBTI</button>
+    <div class="dropdown-menu">
+      <a href="#">ESTJ</a>
+      <a href="#">ISTJ</a>
+      <a href="#">ESFJ</a>
+      <a href="#">ISFJ</a>
+    </div>
+  </div>
+
+  <div class="search-container">
+    <input class="search-input" type="text" placeholder="Search...">
+    <button class="search-button">검색</button>
+  </div>
+
+</main>
+
+<script src="../static/js/modal.js"></script>
 </body>
 
 </html>
+
