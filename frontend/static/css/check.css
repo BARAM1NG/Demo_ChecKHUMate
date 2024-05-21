@@ -105,40 +105,6 @@ main {
     /*gap: 20px;*/
 }
 
-.logo a {
-    display: flex;
-    align-items: center;
-}
-
-.logo a img {
-    height: 40px;
-    /* 로고 이미지 높이 조정 */
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    color: #666;
-    text-decoration: none;
-}
-
-.nav-links li:nth-child(1)>a {
-    color: #A40F16;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: #A40F16;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 /* 여기서부터 nav */
 
@@ -150,28 +116,6 @@ main {
 .title h1 {
     font-size: 35px;
     padding: 30px 0 30px 0;
-}
-
-.filter {
-    height: 70px;
-}
-
-.filter button {
-    width: 100px;
-    height: 30px;
-    margin: 20px 15px 0 15px;
-    font-weight: bold;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    border: #333 2px solid;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-.filter button:hover {
-    font-weight: bolder;
-    border: #A40F16 4px solid;
-    color: #A40F16;
 }
 
 
@@ -367,3 +311,67 @@ main {
 }
 
 /* Roommate */
+.profile {
+    position: absolute;
+    width: 400px;
+    height: 347px;
+    left: 51px;
+    top: 344px;
+    background: url('cover-image.png'); /* 배경 이미지 URL 추가 */
+}
+
+.cover {
+    position: absolute;
+    width: 400px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+    background: url('cover-image.png'); /* 커버 이미지 URL 추가 */
+}
+
+.ava {
+    box-sizing: border-box;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 20px;
+    bottom: 205px;
+    background: url('profile-image.png'); /* 프로필 이미지 URL 추가 */
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+}
+
+.details {
+    position: absolute;
+    width: 173px;
+    height: 44px;
+    left: 20px;
+    top: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.nickname {
+    position: absolute;
+    height: 24px;
+    left: 88px;
+    right: 20px;
+    bottom: 221px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.profile-title {
+    position: absolute;
+    width: 364px;
+    height: 96px;
+    left: 16px;
+    top: 155px;
+}
