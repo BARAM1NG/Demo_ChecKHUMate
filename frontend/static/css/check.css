@@ -102,6 +102,7 @@ main {
     padding: 25px 50px 0 50px;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap; /*자식 요소들이 공간이 부족할 때 자동으로 다음 줄로 넘어가도록*/
     /*gap: 20px;*/
 }
 
@@ -311,13 +312,23 @@ main {
 }
 
 /* Roommate */
+.profile-container {
+    width: 100%;
+    gap: 40px;
+    display: flex; /* Flexbox 사용 */
+    flex-wrap: wrap;
+}
+
 .profile {
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 347px;
-    left: 51px;
-    top: 344px;
-    background: url('cover-image.png'); /* 배경 이미지 URL 추가 */
+    left: 30px;
+    top: 20px;
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    /*width: 100%*/
 }
 
 .cover {
@@ -326,24 +337,51 @@ main {
     height: 134px;
     left: 0px;
     top: 0px;
-    background: url('cover-image.png'); /* 커버 이미지 URL 추가 */
+    background-size: cover; /* 배경 이미지가 요소를 완전히 덮도록 설정 */
+    background-position: center;
+    border-top-left-radius: 20px; /* 상단 왼쪽 모서리에만 둥근 모양 적용 */
+    border-top-right-radius: 20px; /* 상단 오른쪽 모서리에만 둥근 모양 적용 */
+}
+
+.profile1 .cover{
+    background: url('../image/checkpage/cover1.png'); /* 커버 이미지 URL 추가 */
+}
+
+.profile2 .cover{
+    background: url('../image/checkpage/cover1.png'); /* 커버 이미지 URL 추가 */
+}
+
+.profile3 .cover{
+    background: url('../image/checkpage/cover1.png'); /* 커버 이미지 URL 추가 */
 }
 
 .ava {
     box-sizing: border-box;
     position: absolute;
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
     left: 20px;
-    bottom: 205px;
-    background: url('profile-image.png'); /* 프로필 이미지 URL 추가 */
+    bottom: 190px;
+    background-size: cover; /* 배경 이미지가 요소를 완전히 덮도록 설정 */
     border: 2px solid #FFFFFF;
     border-radius: 100px;
 }
 
+.profile1 .ava{
+    background: url('../image/checkpage/profile1.png'); /* 프로필 이미지 URL 추가 */
+}
+
+.profile2 .ava{
+    background: url('../image/checkpage/profile2.png'); /* 프로필 이미지 URL 추가 */
+}
+
+.profile3 .ava{
+    background: url('../image/checkpage/profile3.png'); /* 프로필 이미지 URL 추가 */
+}
+
 .details {
     position: absolute;
-    width: 173px;
+    width: 400px;
     height: 44px;
     left: 20px;
     top: 280px;
@@ -357,21 +395,48 @@ main {
 .nickname {
     position: absolute;
     height: 24px;
-    left: 88px;
+    left: 85px;
     right: 20px;
-    bottom: 221px;
-    font-family: 'Roboto';
+    bottom: 200px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
+}
+
+.info {
+    position: relative;
+    margin-top: -120px;
+    left: 20px;
 }
 
 .profile-title {
     position: absolute;
     width: 364px;
-    height: 96px;
-    left: 16px;
-    top: 155px;
+    height: 90px;
+    left: 30px;
+    top: 180px;
+
+    font-weight: bold;
+    font-size: 24px;
+    color: #191818;
+}
+
+.profile-more {
+    position: relative;
+    margin-top: 280px;
+    margin-left: 25px;
+    /*display: inline-block; !* 버튼을 인라인 블록으로 표시 *!*/
+    padding: 10px 20px; /* 상하 10px, 좌우 20px의 패딩 */
+    font-size: 16px; /* 글자 크기 16px */
+    color:  #6E41E2; /* 글자 색상 흰색 */
+    background-color: #ffffff; /* 배경 색상 */
+    border: solid; /* 테두리 없음 */
+    border-radius: 5px; /* 테두리 둥글게 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+}
+
+.profile-more:hover {
+    background-color: #948dc0; /* 마우스 오버 시 배경 색상 변경 */
 }
