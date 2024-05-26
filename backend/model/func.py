@@ -1,3 +1,4 @@
+# 필요한 패키지 임포트
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,7 +32,7 @@ def prepare_data(data):
     ]
     user_data = data[user_data_columns]
     user_data = user_data.set_index('user_id')
-    
+
     # 사용자 선호 데이터 선택
     wish_data_columns = [
         'user_id', 'wish_domitory', 'wish_age', 'wish_student_id', 'wish_gender',
@@ -40,10 +41,10 @@ def prepare_data(data):
     ]
     wish_data = data[wish_data_columns]
     wish_data = wish_data.set_index('user_id')
-    
+
     return user_data, wish_data
-  
-  # 코랩용.
+
+
 def encode_and_concat_to_array(dataframe, column_name):
     """
     원핫 인코딩을 수행하고 원본 데이터프레임에 결과를 추가한 후 전체를 numpy 배열로 반환합니다.
@@ -109,10 +110,10 @@ class Recommender_without_sentence:
             # k개의 결과만 반환
             all_results.append(valid_indices[:k])
 
-        # 결과와 -1 정보 모두 반환
         return np.array(all_results)
-      
-# 신버전
+
+
+# Faiss & SBERT 합성 모델
 class IntroductionRecommender:
     def __init__(self, user_data):
         self.user_data = user_data
@@ -123,25 +124,15 @@ class IntroductionRecommender:
         self.user_data['one_sentence'] = user_data['one_sentence'].fillna('No introduction provided').astype(str)
 
     def create_faiss_index(self):
-
-        """임베딩을 생성하고 FAISS 인덱스에 추가합니다."""
-        # 모든 자기소개 문장 임베딩 생성
         self.embeddings = self.embedder.encode(self.user_data['one_sentence'].tolist(), convert_to_tensor=False)
 
         normalized_embeddings = self.embeddings.copy()
-
-        # normalized_embeddings의 벡터를 L2 Norm(유클리드 거리 기준)으로 정규화합니다.
-        # 이렇게 함으로써, 벡터의 길이를 1로 만들어 줍니다. 이것은 내적 기반의 유사도 검색에서 중요한 절차입니다.
-        # 왜냐하면 정규화된 벡터들 사이의 내적은 두 벡터의 코사인 유사도와 동일하기 때문입니다.
         faiss.normalize_L2(normalized_embeddings)
 
-        # FAISS 인덱스 생성
-        d = self.embeddings.shape[1]  # 임베딩 차원
+        d = self.embeddings.shape[1]
         index_flat = faiss.IndexFlatIP(d)
-
-        self.index =index = faiss.IndexIDMap(index_flat)
+        self.index = faiss.IndexIDMap(index_flat)
         self.index.add_with_ids(normalized_embeddings, self.id_index)
-
 
     def find_similar_introductions(self, result_indices, k=10):
         if self.index is None:
@@ -149,25 +140,18 @@ class IntroductionRecommender:
 
         all_group_similarities = []
 
-        for indices in result_indices:
-            min_distances = {}  # 인덱스별 최소 거리를 저장할 사전
+        for base_index, indices in enumerate(result_indices):
+            if base_index >= len(self.user_data):
+                continue
 
-            for element in indices:
-                # 인덱스에 해당하는 텍스트만 인코딩합니다.
-                text_to_encode = [self.user_data['one_sentence'].iloc[element]]
-                vector = self.embedder.encode(text_to_encode)
-                faiss.normalize_L2(vector)
+            base_vector = self.embeddings[base_index].reshape(1, -1)
+            compare_vectors = self.embeddings[indices]
 
-                D, I = self.index.search(vector.reshape(1, -1), k+1)
+            D, I = self.index.search(base_vector, len(self.user_data))
+            distances = [(I[0][i], D[0][i]) for i in range(len(I[0])) if I[0][i] in indices]
 
-                for i, d in zip(I[0], D[0]):
-                    if i != element and i in indices:
-                        if i not in min_distances or min_distances[i] > d:
-                            min_distances[i] = d  # 최소 거리 업데이트
-
-
-            # 인덱스와 거리를 튜플로 변환하여 리스트로 만든 후, 텍스트 유사도에 따라
-            group_similarities = sorted(min_distances.items(), key=lambda x: x[1], reverse = True)
+            distances = sorted(distances, key=lambda x: x[1], reverse=True)
+            group_similarities = [idx for idx, _ in distances[:k]]
             all_group_similarities.append(group_similarities)
 
         return all_group_similarities
