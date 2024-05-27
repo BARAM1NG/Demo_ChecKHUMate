@@ -62,7 +62,7 @@ This is our notion page for our project archive. :
 ## Members
 |멤버이름|역할|
 |------|---|
-|배아람|Leader, Data Preprocessing, Data Modeling, Frontend|
+|배아람|Leader, Data Preprocessing, Data Modeling, Frontend|
 |이준혁|Data Collection, Data Modeling|
 |이다은|Data Collection, Frontend, Backend|
 |이수민|Data Collection, Design, Frontend|
