@@ -1,4 +1,4 @@
-# checKHUmate
+# 🏛️ checKHUmate
 KHUDA 5기 심화 프로젝트 룸메이트 추천 알고리즘 개발
 
 ## Table of Contents
@@ -50,20 +50,9 @@ Our project has two key features: `feature similarity` and `sentence similarity`
 ---
 
 ## Pages
-- start page
-<img width="500" alt="main" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/ce7fcf8b-734c-4565-9b2c-93d80005069e">
 
-- wish roommate page
-<img width="500" alt="wish_roommate" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/800165c8-4411-4de7-a70c-cdb1eeb3b02f">
-
-- my page
-<img width="500" alt="mypage" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/68cd590e-7769-4a83-8e1f-95cff1da29da">
-
-- my profile page
-<img width="500" alt="profile" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/0216cbe1-fe73-42cb-9711-173e49c1d94f">
-
-- roommate searching page
-<img width="500" alt="roommate_search" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/59ced6f8-60a6-4ee3-8ff3-fdb990f26b8b">
+<img width="300" alt="main" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/ce7fcf8b-734c-4565-9b2c-93d80005069e"> <img width="300" alt="wish_roommate" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/800165c8-4411-4de7-a70c-cdb1eeb3b02f">
+<img width="300" alt="mypage" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/68cd590e-7769-4a83-8e1f-95cff1da29da"> <img width="300" alt="profile" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/0216cbe1-fe73-42cb-9711-173e49c1d94f"> <img width="300" alt="roommate_search" src="https://github.com/ChecKHUMate/Demo_ChecKHUMate/assets/122276734/59ced6f8-60a6-4ee3-8ff3-fdb990f26b8b">
 
 
 ## Project Archive
